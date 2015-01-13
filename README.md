@@ -1,2 +1,0 @@
-# suqy.github.io
-suqy

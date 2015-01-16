@@ -50,6 +50,7 @@ a:hover{ color:#7dbfbd;}
 .header .link a:hover{background-color: #424242;}
 /* 淡入-从左 */
 .a-fadeinL{-webkit-animation:1s ease-out backwards;-moz-animation:1s ease-out backwards;-ms-animation:1s ease-out backwards;animation:1s ease-out backwards;-webkit-animation-name:fadeinL;-moz-animation-name:fadeinL;-ms-animation-name:fadeinL;}
+/* 淡入-从下 */
 .a-fadeinB{-webkit-animation: fadein 1s; -moz-animation: fadein 1s; -ms-animation: fadein 1s; animation: fadein 1s;-webkit-animation-name:fadein;-moz-animation-name:fadein;-ms-animation-name:fadein;}
 /* animation fadein */
 @-webkit-keyframes fadein{
@@ -112,7 +113,6 @@ a:hover{ color:#7dbfbd;}
 .page-content h1{font: 26px/1.5 Microsoft YaHei;color: #4c4c4c;margin-bottom: 15px;}
 .page-content .about-list{font-size: 18px;line-height: 1.8;padding-bottom: 15px;}
 .page-content .about-list a{color: #7dbfbd;}
-.page-content img{width: 100%;}
 .page-content .article-list li{line-height: 45px;height: 45px;border-bottom: 1px dashed #ddd;}
 .page-content .article-list li:last-child{border-bottom: none;}
 .page-content .article-list li a{display: block;font-size: 16px;}

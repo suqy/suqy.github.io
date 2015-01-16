@@ -1,8 +1,11 @@
-        <div id="footer">
-            <div id="footer-inner">
-                <p id="copyright">Copyright (c) <%= site.copyright.beginYear %>-<%= site.copyright.endYear %> <%= site.copyright.owner %></p>
-            </div>
-        </div>
-        <% include footer_plugin %>
-    </body>
+<div class="footer">
+    <div class="friend-links">友情链接 :
+        <% ext.friendlink.forEach(function (fl) { %>
+        <a href="<%= fl.url %>" target="_blank"><%= fl.label %></a>
+        <% }) %>
+    </div>
+    <p> © 2015 suqin</p>
+</div>
+<% include footer_plugin %>
+</body>
 </html>

@@ -7,18 +7,19 @@
         <meta name="keywords" content="<%= site.meta.keywords %>"/>
         <meta name="author" content="<%= site.meta.author %>"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-        <title><%= site.title %> - <% include subtitle %></title>
-        <link rel="stylesheet" href="/assets/vendor/normalize.css"/>
-        <link rel="stylesheet" href="/assets/vendor/prettify-<%= site.codetheme %>.css"/>
+        <title><% include subtitle %></title>
         <link rel="stylesheet" href="/assets/themes/<%= site.theme %>/main.css"/>
-        <link rel="shortcut icon" href="/fav.ico"/>
+        <link rel="icon" href="../../assets/images/icon.png"/>
         <script type="text/javascript" src="/assets/vendor/prettify.js"></script>
         <% include header_plugin %>
     </head>
-    <body onload="prettyPrint()">
-    <div id="header">
-        <div id="header-inner">
-            <div id="title"><a href="/"><%= site.title %></a></div>
-            <div id="subtitle"><%= site.subtitle %></div>
+    <body>
+    <div class="top">
+        <div class="top-inner">
+            <h1 class="logo"><img src="../../assets/images/psb.jpg" alt=""/></h1>
+            <div class="topnav fr">
+                <a href="/">首页</a><a href="/pages/about-me.html" target="_self">关于我</a> <a href="/tag.html">文章归档</a> <a href="https://github.com/suqy">Github</a>
+            </div>
         </div>
     </div>
+

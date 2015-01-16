@@ -1,17 +1,14 @@
 <% include inc/header %>
-<div id="main">
-    <div id="main-inner">
-        <div id="topnav">
-            <ul>
-                <li><a href="/">首页</a></li>
-                <li class="sep"> | </li>
-                <li><a href="/tag.html">标签</a></li>
-                <% include inc/navbar %>
+    <div class="main">
+        <div class="page-content a-fadeinB">
+            <h1><%= page.title %></h1>
+            <ul class="about-list">
+                <li>我是一名 Web 开发者，目前在<a href="http://gao7.com/">搞趣网</a>工作。</li>
+                <li>电子邮箱：sukoqy@163.com</li>
+                <li>如果您有什么建议或意见请及时联系我，谢谢！</li>
+                <li>不管你是新手还是老手，让我们一起相互讨论，相互进步吧！</li>
             </ul>
-            <div style="clear:both;"></div>
+            <img src="../assets/images/about-me.jpg" alt=""/>
         </div>
-        <h1><%= page.title %></h1>
-        <div id="page-content"><%- page.content %></div>
     </div>
-</div>
 <% include inc/footer %>

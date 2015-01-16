@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="null"/>
+        <meta name="keywords" content="前端,suqin"/>
+        <meta name="author" content="suqin"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <title>前端冷知识，你可能不知道的前端知识之CSS篇
+</title>
+        <link rel="stylesheet" href="/assets/themes/default/main.css"/>
+        <link rel="icon" href="../../assets/images/icon.png"/>
+        <script type="text/javascript" src="/assets/vendor/prettify.js"></script>
+        
+    </head>
+    <body>
+    <div class="top">
+        <div class="top-inner">
+            <h1 class="logo"><img src="../../assets/images/psb.jpg" alt=""/></h1>
+            <div class="topnav fr">
+                <a href="/">首页</a><a href="/pages/about-me.html" target="_self">关于我</a> <a href="/tag.html">文章归档</a> <a href="https://github.com/suqy">Github</a>
+            </div>
+        </div>
+    </div>
+
+
+<div class="main a-fadeinL">
+    <div class="page-content">
+        <div class="article-title">
+            <h1>前端冷知识，你可能不知道的前端知识之CSS篇</h1>
+        </div>
+        <div class="article-meta">
+            <span>作者:suqin</span><span>时间：2015-01-16</span>
+        </div>
+        <div class="article-content">
+            <h3 id="实时编辑css">实时编辑CSS</h3>
+<p>通过设置style标签的display:block样式可以让页面的style标签显示出来，并且加上contentEditable属性后可以让样式成为可编辑状态，更改后的样式效果也是实时更新呈现的。此技巧在IE下无效。大家不妨演示一下！</p>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;body&gt;
+        &lt;style style=&quot;display:block&quot; contentEditable&gt;
+            body { color: blue }
+        &lt;/style&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre><h3 id="多重边框">多重边框</h3>
+<p>利用重复指定box-shadow来达到多个边框的效果</p>
+<pre>/*CSS Border with Box-Shadow Example*/
+div {
+    box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.2), 0 0 0 12px rgba(0, 0, 0, 0.2), 0 0 0 18px rgba(0, 0, 0, 0.2), 0 0 0 24px rgba(0, 0, 0, 0.2);
+    height: 200px;
+    margin: 50px auto;
+    width: 400px
+}
+</pre><p>效果如下：</p>
+<p><p><img src="/assets/images/cssxiaoguo.png" alt="alt text"></p></p>
+<h3 id="css中也可以做简单运算">CSS中也可以做简单运算</h3>
+<p>通过CSS中的calc方法可以进行一些简单的运算，从而达到动态指定元素样式的目的。</p>
+<pre>.container{
+    background-position: calc(100% - 50px) calc(100% - 20px);
+}
+</pre><h3 id="简单的文字模糊效果">简单的文字模糊效果</h3>
+<p>以下两行简单的CSS3代码可达到将文字模糊化处理的目的，出来的效果有点像使用PS的滤镜!</p>
+<pre>p {
+    color: transparent;
+    text-shadow: #111 0 0 5px;
+}
+</pre>
+        </div>
+        <!-- 多说评论框 start -->
+        <div class="ds-thread" data-thread-key="请将此处替换成文章在你的站点中的ID" data-title="请替换成文章的标题" data-url="请替换成文章的网址"></div>
+        <!-- 多说评论框 end -->
+        <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+        <script type="text/javascript">
+            var duoshuoQuery = {short_name:"suqy"};
+            (function() {
+                var ds = document.createElement('script');
+                ds.type = 'text/javascript';ds.async = true;
+                ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                ds.charset = 'UTF-8';
+                (document.getElementsByTagName('head')[0]
+                        || document.getElementsByTagName('body')[0]).appendChild(ds);
+            })();
+        </script>
+        <!-- 多说公共JS代码 end -->
+
+        
+    </div>
+</div>
+<div class="footer">
+    <div class="friend-links">友情链接 :
+        
+        <a href="http://gao7.com/" target="_blank">搞趣网</a>
+        
+        <a href="http://willerce.com/" target="_blank">willerce</a>
+        
+        <a href="http://www.zhoujier.com/" target="_blank">积耳大神</a>
+        
+        <a href="https://huangzhenda.github.io/" target="_blank">阿达</a>
+        
+        <a href="http://linjunfeng.com/" target="_blank">Junfo</a>
+        
+        <a href="http://linwu.name/" target="_blank">拳头巴掌</a>
+        
+    </div>
+    <p> © 2015 suqin</p>
+</div>
+
+
+</body>
+</html>
+

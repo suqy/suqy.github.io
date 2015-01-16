@@ -5,7 +5,7 @@
         <h1>文章归档</h1>
         <% tag.articles.forEach(function (ar) { %>
         <ul class="article-list">
-            <li><span class="fr"><%= ar.postedOn %><%= ar.data %></span><a href="/articles/<%= ar.id %>.html"><%= ar.title %></a></li>
+            <li><span class="fr"><%= ar.postedOn %>-<%= ar.data %></span><a href="/articles/<%= ar.id %>.html"><%= ar.title %></a></li>
             <% }) %>
             <% }) %>
         </ul>
